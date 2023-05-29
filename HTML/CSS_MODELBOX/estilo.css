@@ -1,0 +1,130 @@
+body{
+    font-family: 'Ysabeau', sans-serif;
+}
+.puntos{
+    text-align: right;
+    margin-right: 550px;
+    margin-top: -65px;
+    
+}
+.central{
+    text-align: center;
+    
+}
+.etiqueta{
+    text-align: left;
+    margin-left: 500px;
+}
+.colorfecha{
+    color: rgb(206, 211, 215);
+    margin-bottom: 40px;
+    font-size: 15px;
+}
+.username{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+img{
+    width: 300px;
+    margin-top: 40px;
+}   
+.edit{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: rgb(30, 133, 254);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
+    margin-top: 100px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+} 
+.botones{
+    text-decoration: none;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: lightgray ;
+}
+
+.boton3{
+    font-size: 1.3em;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: gray;
+}
+.boton2{
+    font-size: 1.3em;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 40px;
+    text-decoration: none;
+    color: gray;
+}
+.boton1{
+    font-size: 1.3em;
+    margin-left: -45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-right: 15px;
+    text-decoration: none;
+    color: gray;
+}
+.gbotones{
+    margin-top: 80px;
+}
+.boton2:hover{
+    cursor: pointer;
+    background-color: rgb(203, 227, 239);
+    color: rgb(30, 133, 254);
+}
+.boton3:hover{
+    cursor: pointer;
+    background-color: rgb(203, 227, 239);
+    color: rgb(30, 133, 254);
+}
+.boton1:hover{
+    cursor: pointer;
+    background-color: rgb(203, 227, 239);
+    color: rgb(30, 133, 254);
+}
+.correo{
+    font-size: 1.3em;
+    margin-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    color: gray;
+    text-decoration: none;
+}
+.correo:hover{
+    cursor: pointer;
+    background-color: rgb(203, 227, 239);
+    color: rgb(30, 133, 254);
+}
+
