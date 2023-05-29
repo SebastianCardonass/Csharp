@@ -1,0 +1,9 @@
+.columna-doble {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .columna-doble p {
+    margin: 0;
+  }
