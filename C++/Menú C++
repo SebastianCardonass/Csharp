@@ -1,0 +1,267 @@
+// MenuC++.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+#include <Windows.h>
+
+using namespace std;
+
+int main()
+{
+    int numero1, numero2, resultado, salir, opcion, limite, multiplicador, divisor, contador;
+    //VALOR VARIABLES
+
+    salir = 1;
+
+    //EJERCICIO
+    do {
+        system("cls");
+        cout << "Menu Programas" << endl << endl;
+        cout << "1. Sumar" << endl;
+        cout << "2. Restar" << endl;
+        cout << "3. Multiplicar" << endl;
+        cout << "4. dividir" << endl;
+        cout << "5. Tablas de multiplicar" << endl;
+        cout << "6. Saber si es primo" << endl;
+        cout << "7. Salir" << endl << endl;
+        cout << "Ingresa el numero de la opcion que deseas usar" << endl;
+        cin >> opcion;
+        switch (opcion)
+        {
+            case 1:
+            {
+                system("cls");
+                cout << "Este programa sirve para sumar dos numeros" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el primer numero" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    system("cls");
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el primer numero" << endl;
+                    cin >> numero1;
+
+                }
+                cout << "Ingrese el segundo numero" << endl;
+                cin >> numero2;
+                while (numero2 < 0)
+                {
+                    system("cls");
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el segundo numero" << endl;
+                    cin >> numero2;
+
+                }
+                cout << "El resultado de la suma es " << (numero1 + numero2) << endl;
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+            case 2:
+            {
+                system("cls");
+                cout << "Este programa sirve para restar dos numeros" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el primer numero" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el primer numero" << endl;
+                    cin >> numero1;
+
+                }
+                cout << "Ingrese el segundo numero" << endl;
+                cin >> numero2;
+                while (numero2 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el segundo numero" << endl;
+                    cin >> numero2;
+
+                }
+                cout << "El resultado de la resta es " << (numero1 - numero2) << endl;
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+            case 3:
+            {
+                system("cls");
+                cout << "Este programa sirve para multiplicar dos numeros" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el primer numero" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el primer numero" << endl;
+                    cin >> numero1;
+
+                }
+                cout << "Ingrese el segundo numero" << endl;
+                cin >> numero2;
+                while (numero2 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el segundo numero" << endl;
+                    cin >> numero2;
+
+                }
+                cout << "El resultado de la multiplicacion es " << (numero1 * numero2) << endl;
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+            case 4:
+            {
+                system("cls");
+                cout << "Este programa sirve para dividir dos numeros" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el primer numero" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el primer numero" << endl;
+                    cin >> numero1;
+
+                }
+                cout << "Ingrese el segundo numero" << endl;
+                cin >> numero2;
+                while (numero2 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el segundo numero" << endl;
+                    cin >> numero2;
+
+                }
+                cout << "El resultado de la division es " << (numero1 / numero2) << endl;
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+            case 5:
+            {
+                system("cls");
+                //
+                multiplicador = 1;
+                //
+                cout << "Este programa sirve para saber la tabla de multiplicar de un numero" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el numero del cual desea saber la tabla" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el numero del cual desea saber la tabla" << endl;
+                    cin >> numero1;
+
+                }
+                cout << "Ingrese hasta que multiplicador desea saber la tabla" << endl;
+                cin >> limite;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese hasta que multiplicador desea saber la tabla" << endl;
+                    cin >> limite;
+
+                }
+                for (multiplicador = 1; multiplicador <= limite; multiplicador++)
+                {
+                    cout << numero1 << " x " << multiplicador << " = " << (numero1 * multiplicador) << endl;
+                }
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+            case 6:
+            {
+                divisor = 1;
+                contador = 0;
+                system("cls");
+                cout << "Este programa sirve para saber si un numero es primo" << endl;
+                cout << "----------------------------------" << endl;
+                cout << "Ingrese el numero" << endl;
+                cin >> numero1;
+                while (numero1 < 0)
+                {
+                    cout << "El numero debe de ser mayor que 0" << endl;
+                    cout << "----------------------------------" << endl;
+                    cout << "Ingrese el numero" << endl;
+                    cin >> numero1;
+
+                }
+                while (divisor <= numero1)
+                {
+                    if (numero1 % divisor == 0)
+                    {
+                        contador++;
+                    }
+                    divisor++;
+                }
+                if (contador == 2)
+                {
+                    cout << "El numero " << numero1 << " es primo" << endl;
+                }
+                else
+                {
+                    cout << "El numero " << numero1 << " no es primo" << endl;
+                }
+                cout << "----------------------------------" << endl;
+                cout << "presione ENTER para continuar" << endl;
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+
+            }
+            break;
+
+            case 7:
+            {
+                cout << "Si esta seguro que desea salir ingrese 0 sino ingrese cualquier numero" << endl;
+                cin >> salir;
+            }
+            break;
+
+            default:
+            {
+                system("cls");
+                cout << "Las opciones del menu solo van del 0 al 7 idiota" << endl;
+                cout << "----------------------------------" << endl;                
+                cout << "Si desea volver al menu ingrese cualquier numero sino ingrese el 0" << endl;
+                cin >> salir;
+            }
+            break;
+
+        }
+
+    } while (salir != 0);
+
+    return 0;
+}
