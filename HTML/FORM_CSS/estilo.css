@@ -1,0 +1,92 @@
+*{
+    font-size: 18px;
+}
+h2{
+    font-size: 30px;    
+}
+.contenedor{
+    margin: auto;
+    width: 35%;   
+    display: block;
+    white-space: nowrap;
+}
+.editar{
+    background-color: rgb(52, 52, 228);
+    padding: 10px;
+    width: 20px;
+    color: white;
+    border-radius: 20px;    
+    position: absolute;
+    margin-left: 22%;
+    margin-top: -6.5%;
+
+    
+
+}
+img{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.imagen{
+    text-align: center;
+    margin-left: 7%;
+}
+.grandes{
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    width: 100%;
+    white-space: nowrap;
+}
+.pequenos{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    white-space: nowrap;
+    padding: 2%;
+    
+
+}
+.pequenos input{
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;   
+    margin-top: 20px;
+    white-space: nowrap;
+    background-color: #f4f7ff;
+    border: blue solid 2px; 
+}
+.completos{
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    padding: 2%;
+    
+}
+.completos input{
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: #f4f7ff;
+    border: blue solid 2px; 
+}
+button{
+    
+    margin-top: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 13px;
+    color: white;
+    background-color: rgb(52, 52, 228);
+    border-radius: 7px;
+    border-color: rgb(52, 52, 228);
+   
+}
+
+
