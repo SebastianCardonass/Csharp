@@ -1,0 +1,225 @@
+import os
+#AQUI SE DECLARAN TODAS LAS VARIABLES
+opcion = 0
+salir = 1
+numero1 = 0
+numero2 = 0
+divisor = 1
+resultado = 0
+limite = 0 
+multiplicador = 1
+contador = 0
+cerrar = 1
+#EJERCICIO
+while salir != 0:
+   
+    os.system("cls")
+    print ("Menu operaciones basicas")
+    print ("\n1. Sumar")
+    print ("2. restar")
+    print ("3. multiplicar")
+    print ("4. Tabla de multiplicar")
+    print ("5. dividir")
+    print ("6. Saber si es primo")
+    print ("7. Salir")
+    print ("\nIngrese el numero de la opcion que desea saber")
+    opcion = int(input())
+    #----------------------------------------
+    #CASO 1
+    #------------------------------------------
+    if opcion is 1:
+        os.system("cls")
+        print("Esta opcion sirve para sumar dos numeros")
+        print("---------------------------------------------")
+        print ("Ingrese el primer numero")
+        numero1 = int(input())
+        while numero1 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+    
+        print ("Ingrese el segundo numero")
+        numero2 = int(input())
+        while numero2 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero2 = int(input())
+        print ("El resultado de la suma es", (numero1 + numero2))
+        print("\n---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #-----------------------------------------
+    #CASO 2
+    #------------------------------------------    
+    elif opcion is 2:
+        os.system("cls")
+        print("Esta opcion sirve para restar dos numeros")
+        print("---------------------------------------------")
+        print ("Ingrese el primer numero")
+        numero1 = int(input())
+        while numero1 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+    
+        print ("Ingrese el segundo numero")
+        numero2 = int(input())
+        while numero2 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero2 = int(input())
+            resultado = numero1 - numero2
+            print ("El resultado de la suma es", resultado)
+            print("\n---------------------------------------------")
+            print ("Presione ENTER para continuar")
+            input
+        print ("El resultado de la suma es", (numero1 - numero2))
+        print("---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #---------------------------------------------------
+    #CASO 3
+    #--------------------------------------------------------
+    elif opcion is 3:
+        os.system("cls")
+        print("Esta opcion sirve para multiplicar dos numeros")
+        print("---------------------------------------------")
+        print ("Ingrese el primer numero")
+        numero1 = int(input())
+        while numero1 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+    
+        print ("Ingrese el segundo numero")
+        numero2 = int(input())
+        while numero2 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero2 = int(input())
+        print ("El resultado de la multiplicacion es", (numero1 * numero2))
+        print("---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #---------------------------------------------------
+    #CASO 4
+    #--------------------------------------------------------
+    elif opcion is 4:
+        os.system("cls")
+        print("Esta opcion sirve para saber la tabla de multiplicar de un numero")
+        print("---------------------------------------------")
+        print ("Ingrese el numero del cual desea saber la tabal de multiplicar")
+        numero1 = int(input())
+        while numero1 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+        print("Hasta que multiplicador desea saber la tabla")
+        limite = int(input())
+        while limite < 0:
+            print("El multiplicador debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el multiplicador de nuevo")
+            limite = int(input())
+        print("La tabla de el", numero1, "hasta el", limite)
+        for multiplicador in range (1,(limite + 1),+1):
+           print(numero1,"x", multiplicador,"=", (numero1 * multiplicador))
+
+        print("---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #---------------------------------------------------
+    #CASO 5
+    #--------------------------------------------------------
+    elif opcion is 5:
+        os.system("cls")
+        print("Esta opcion sirve para dividir dos numeros")
+        print("---------------------------------------------")
+        print ("Ingrese el primer numero")
+        numero1 = int(input())
+        while numero1 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+    
+        print ("Ingrese el segundo numero")
+        numero2 = int(input())
+        while numero2 < 0:
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero2 = int(input())
+        print ("El resultado de la division es", (numero1 / numero2))
+        print("---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #---------------------------------------------------
+    #CASO 6
+    #--------------------------------------------------------
+    elif opcion is 6:
+        os.system("cls")
+        print("Esta opcion sirve para saber si un numero es primo")
+        print("---------------------------------------------")
+        print ("Ingrese el numero")
+        numero1 = int(input())
+        while numero1 < 0:
+
+            print("El numero debe de ser positivo")
+            print("----------------------------------")
+            print("Ingrese el primer numero")
+            numero1 = int(input())
+
+        while divisor <= numero1:
+
+            if numero1 % divisor == 0:
+
+                contador = contador + 1
+               
+            divisor = divisor + 1
+
+        if contador == 2:
+
+            print ("El numero",numero1,"es primo")
+
+        else:
+
+            print ("El numero",numero1,"no es primo")
+        print("---------------------------------------------")
+        input("Presione ENTER para continuar...")
+        print ("Ingrese 1 para volver al menu o ingrese 0 para salir")
+        salir = int(input())
+    #---------------------------------------------------
+    #CASO 7
+    #--------------------------------------------------------
+    elif opcion is 7:
+        os.system("cls")
+        print ("Esta seguro de que desea salir...")
+        print ("Si esta seguro ingrese 0 si no ingrese 1")
+        cerrar = int(input())
+        if cerrar == 0:
+            
+            exit(0)
+        else:
+            salir == 1
+    #---------------------------------------------------
+    #SWITCH
+    #--------------------------------------------------------
+    else:
+        os.system("cls")
+        print ("El menu solo va de 0 a 7 idiota")
+        input("Presione ENTER para continuar...")
+        salir == 1
+        
